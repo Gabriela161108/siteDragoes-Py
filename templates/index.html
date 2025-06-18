@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site da Gabriela</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <center>
+    <h1>Bem vindo ao meu site!</h1>
+    <h3>Esse site é sobre dragões</h3>
+    <p>Bem vindo!</p>
+    <p id="visitante" class="nomeVisitante">Aguardando...</p>
+
+    <a href="https://www.dreamworks.com/how-to-train-your-dragon/explore/toothless"><img src="Img/images.jpg" alt=""></a>
+    <br>
+    <a href="https://www.dreamworks.com/how-to-train-your-dragon/explore/toothless">Clique aqui</a>
+      
+    <h3>Cadastro</h3>
+    <label>Nome</label>
+    <br>
+    <input type="text">
+    <br>
+    <label>Sobrenome</label>
+    <br>
+    <input type="text">
+    <br><br>
+    <button onclick="enviar()" class="button">Enviar</button>
+
+    <style>
+        body {
+            background-color: rgb(177, 223, 253);
+        }
+        
+        h1 {
+            color: rgb(125, 78, 253);
+            font-family: cursive;
+        }
+        
+        h3 {
+            color: rgb(138, 97, 250);
+            font-size: 20px;
+            font-family: cursive;
+        }
+        
+        p {
+            color: rgb(151, 117, 243);
+            font-size: 20px;
+            font-family: cursive; 
+        }
+        
+        input {
+            border: none;
+            height: 20px;
+            width: 200px;
+            border-radius: 10px;
+        }
+        
+        label {
+            font-size: 20px;
+            font-family: cursive;
+        }
+        
+        a {
+            font-size: 20px;
+            color: rgb(3, 3, 202);
+            text-decoration: none;
+        }
+        
+        img {
+            border-radius: 20px;
+            border: 2px solid white;
+        }
+        
+        img:hover {
+            transform: scale(1.1);
+        }
+        
+        .nomeVisitante {
+            color: blueviolet;
+            font-size: 30px;
+        }
+        
+        .button {
+            height: 40px;
+            width: 150px;
+            border-radius: 20px;
+            color: rgb(0, 0, 0);
+            border: none;
+            background-color: rgb(115, 136, 161);
+            cursor: pointer;
+        }
+        
+        .button:hover {
+            background-color: rgba(112, 10, 112, 0.781);
+            color: white;
+        }
+    </style>
+
+    <script>
+        function enviar() {
+            alert("Cadastro feito com sucesso!!")
+        }
+                
+        //Variável para pegar o nome do visitante
+        var usuario = prompt("Digite o seu nome")
+                
+        //Pegar o valor da variável e imprimir na tela
+        document.getElementById('visitante').innerHTML = usuario
+    </script>
+    </center> 
+</body>
+</html>
